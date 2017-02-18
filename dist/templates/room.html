@@ -1,4 +1,5 @@
-<section ng-controller="RoomCtrl as room" ng-repeat="x in room">
-	<div> {{ room.x }}</div>room.title
+<section ng-controller="RoomCtrl as room" >
+	<div> {{ room.title }}</div>
+	<div ng-repeat="x in room.rooms"> {{ x }}</div>
 
 </section>
