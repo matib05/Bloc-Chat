@@ -1,7 +1,7 @@
 (function() {
  	function RoomCtrl(Room, $scope) {
 		$scope.rooms = Room.all;
-		this.title = "rooms"
+		this.title = "ROOMS"
 	}
 
 	angular
