@@ -1,0 +1,19 @@
+.sidebar {
+	background: powderblue;
+	position:absolute;
+    left:0;
+	top:0;
+	bottom: 0;
+	width: 25%;
+	padding: 3rem;
+	font-family: sans-serif;
+}
+
+.sidebar .title {
+	font-size: 24px;
+}
+
+.sidebar .room-names {
+	font-size: 18px;
+	padding-top: 8px
+}

@@ -1,7 +1,11 @@
 <section ng-controller="RoomCtrl as room" >
-	<div> {{ room.title }}</div>
-	<div ng-repeat="r in rooms">
-		{{ r.$value }}
+	
+	<div class="sidebar">
+			<div class="title">
+				{{ room.title }}
+			</div>
+			<div class="room-names" ng-repeat="r in rooms">
+				{{ r.$value }}
+			</div>
 	</div>
-
 </section>
