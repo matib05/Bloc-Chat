@@ -1,0 +1,13 @@
+<section class="modal-demo" ng-controller="RoomCtrl as room">
+	<div class="modal-header">
+		<div class="modal-title">Create New Room</div>
+	</div>
+	<div class="modal-body">
+		<div class="modal-prompt">Enter a room name</div>
+		<input type="text" id="roomName">
+	</div>
+	<div class="modal-footer">
+		<div class="modal-btn-cancel" ng-click="$dismiss('clicked cancel')">Cancel</div>
+		<div class="modal-btn-create" ng-click="room.createRoom()">Create Room</div>
+	</div>
+</section>

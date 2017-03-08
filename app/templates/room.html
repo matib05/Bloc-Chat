@@ -1,11 +1,14 @@
-<section ng-controller="RoomCtrl as room" >
+<section class="modal-demo" ng-controller="RoomCtrl as room">
 	
 	<div class="sidebar">
-			<div class="title">
-				{{ room.title }}
-			</div>
-			<div class="room-names" ng-repeat="r in rooms">
-				{{ r.$value }}
-			</div>
+		<div class="title">
+			{{ room.title }}
+			<span class="new-room" ng-click="room.open()">
+				New Room
+			</span> 
+		</div>
+		<div class="room-names" ng-repeat="r in rooms">
+			{{ r.$value }}
+		</div>
 	</div>
 </section>

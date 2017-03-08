@@ -1,12 +1,22 @@
 (function() {
-	
  	function Room($firebaseArray) {
+		var Room = { };
+		
+		Room.title = "ROOMS ";
+		
         var ref = firebase.database().ref().child("rooms");
-        var rooms = $firebaseArray(ref);
+        Room.rooms = $firebaseArray(ref);
 
-        return {
-                all: rooms
-        };
+		Room.addRoom = function(name) {
+			Room.rooms.$add({room3: name}).then(function(ref) {
+				var id = ref.key;
+				console.log("added record with id " + id);
+				rooms.$indexFor(id);
+			});
+		};
+		
+		
+		return Room;
 
 }
 

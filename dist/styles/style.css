@@ -13,7 +13,77 @@
 	font-size: 24px;
 }
 
+.sidebar .new-room {
+	font-size: 14px;
+	border: 1px;
+	padding: 5px;
+	background-color: teal;
+}
+.sidebar .new-room:hover {
+	background-color: white;
+	cursor: pointer
+}
+
 .sidebar .room-names {
 	font-size: 18px;
 	padding-top: 8px
 }
+
+
+.modal-header .modal-title {
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+.modal-footer {
+	height: 5rem
+}
+
+.modal-footer .modal-btn-cancel {
+	position: absolute;
+	left: 20px;
+	text-align: center;
+	width: 50%;
+	padding: 5px;
+}
+.modal-footer .modal-btn-create {
+	position: absolute;
+	right: 20px;
+	text-align: center;
+	width: 50%;
+	padding: 5px;
+}
+
+.modal-footer .modal-btn-cancel:hover {
+	background-color: mediumaquamarine;
+	cursor: pointer
+}
+
+.modal-footer .modal-btn-create:hover {
+	background-color: mediumaquamarine;
+	cursor: pointer
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
