@@ -8,10 +8,10 @@
         Room.rooms = $firebaseArray(ref);
 
 		Room.addRoom = function(name) {
-			Room.rooms.$add({room3: name}).then(function(ref) {
+			Room.rooms.$add(name).then(function(ref) {
 				var id = ref.key;
 				console.log("added record with id " + id);
-				rooms.$indexFor(id);
+//				rooms.$indexFor(id);
 			});
 		};
 		
