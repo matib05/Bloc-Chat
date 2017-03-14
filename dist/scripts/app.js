@@ -11,12 +11,7 @@
 				url: '/',
 				controller: 'RoomCtrl',
 				templateUrl: '/templates/room.html'
-			})
-			.state('modal', {
-				url: '/',
-				controller: 'ModalCtrl',
-				templateUrl: '/templates/modal.html'
-			});	
+			});
 		;
 	}
 	

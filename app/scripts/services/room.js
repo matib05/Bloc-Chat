@@ -3,6 +3,7 @@
 		var Room = { };
 		
 		Room.title = "ROOMS ";
+		Room.roomTitle = "Hello World!";
 		
         var ref = firebase.database().ref().child("rooms");
         Room.rooms = $firebaseArray(ref);
@@ -13,7 +14,6 @@
 				console.log("added record with id " + id);
 			});
 		};
-		
 		
 		return Room;
 

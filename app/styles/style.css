@@ -1,5 +1,5 @@
 .sidebar {
-	background: powderblue;
+	background: lightgray;
 	position:absolute;
     left:0;
 	top:0;
@@ -17,7 +17,7 @@
 	font-size: 14px;
 	border: 1px;
 	padding: 5px;
-	background-color: teal;
+	background-color: gray;
 }
 .sidebar .new-room:hover {
 	background-color: white;
@@ -26,9 +26,13 @@
 
 .sidebar .room-names {
 	font-size: 18px;
-	padding-top: 8px
+	padding-top: 8px;
 }
 
+.sidebar .room-names:hover {
+	color: white;
+	cursor: pointer
+}
 
 .modal-header .modal-title {
 	font-size: 20px;
@@ -55,16 +59,22 @@
 }
 
 .modal-footer .modal-btn-cancel:hover {
-	background-color: mediumaquamarine;
+	background-color: gray;
 	cursor: pointer
 }
 
 .modal-footer .modal-btn-create:hover {
-	background-color: mediumaquamarine;
+	background-color: gray;
 	cursor: pointer
 }
 
-
+.include {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 66%;
+	margin-top: 4rem;
+}
 
 
 

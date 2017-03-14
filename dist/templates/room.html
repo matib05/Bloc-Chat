@@ -1,4 +1,4 @@
-<section class="modal-demo" ng-controller="RoomCtrl as room">
+<section ng-controller="RoomCtrl as room">
 	
 	<div class="sidebar">
 		<div class="title">
@@ -8,7 +8,21 @@
 			</span> 
 		</div>
 		<div class="room-names" ng-repeat="r in rooms">
-			{{ r.$value }}
+			<span ng-click="room.roomClick(r.$value)">
+				{{ r.$value }}
+			</span>
 		</div>
 	</div>
+	<section>
+		<main>
+			<div class="include">
+				{{ roomTitle }}
+			</div>
+			
+			<div>
+				{{ room.messages }}
+			</div>
+		</main>
+
+	</section>
 </section>
