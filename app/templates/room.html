@@ -8,7 +8,7 @@
 			</span> 
 		</div>
 		<div class="room-names" ng-repeat="r in rooms">
-			<span ng-click="room.roomClick(r.$value)">
+			<span ng-click="room.roomClick(r)">
 				{{ r.$value }}
 			</span>
 		</div>
@@ -16,13 +16,21 @@
 	<section>
 		<main>
 			<div class="include">
+				<div class="room-title">
 				{{ roomTitle }}
-			</div>
-			
-			<div>
-				{{ room.messages }}
+				</div>
+				<div class="message-display" ng-repeat="m in messages">
+					<div class="username">
+						{{ m.username }}
+					</div>
+					<div class="content">
+						{{ m.content }}
+					</div>
+					<div class="time">
+						{{ m.sentAt }}
+					</div>
+				</div>
 			</div>
 		</main>
-
 	</section>
 </section>

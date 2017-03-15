@@ -72,10 +72,27 @@
 	position: fixed;
 	top: 0;
 	right: 0;
-	width: 66%;
-	margin-top: 4rem;
+	width: 75%;
+}
+.include .room-title {
+	margin-top: 3rem;
+	margin-left: 5rem;
+	font-size: 20px
 }
 
+.message-display {
+	background-color: beige;
+	padding: 3rem;
+}
+
+.username {
+	font-weight: 700;
+}
+
+.time {
+	position: fixed;
+	right: 5rem;
+}
 
 
 

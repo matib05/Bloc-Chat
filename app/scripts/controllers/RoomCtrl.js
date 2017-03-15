@@ -1,15 +1,18 @@
 (function() {
- 	function RoomCtrl($scope, Room, $uibModal, Message
-					  ) {
+ 	function RoomCtrl($scope, Room, $uibModal, Message) {
 		$scope.rooms = Room.rooms;
-		$scope.messages = Message.getByRoomId('-Kf4xlH4nsOr3a4Rz3rd');
+		
 		this.clicking = Room;
 		this.title = Room.title;
 		
-		$scope.roomTitle = "Hello World!";
+		$scope.roomTitle = "Hello! Select a room on the left panel";
 		
-		this.roomClick = function(roomName) {
-			$scope.roomTitle = roomName;
+		this.roomClick = function(room) {
+			this.room = room;
+			$scope.roomTitle = room.$value;
+			$scope.messages = Message.getByRoomId(room.$id);
+			console.log($scope.messages);
+			
 		}
 		
 		this.open = function () {
