@@ -25,7 +25,10 @@
 			var roomName = document.getElementById('roomName').value;
 			console.log(roomName);
 			Room.addRoom(roomName);
+			$close();
 		}
+		
+		
 		
 		
 	}
