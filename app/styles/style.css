@@ -72,12 +72,20 @@
 	position: fixed;
 	top: 0;
 	right: 0;
+	
 	width: 75%;
 }
 .include .room-title {
 	margin-top: 3rem;
 	margin-left: 5rem;
 	font-size: 20px
+}
+
+.messages-container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
 }
 
 .message-display {
@@ -92,4 +100,32 @@
 .time {
 	position: fixed;
 	right: 5rem;
+}
+
+.textbox {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	width: 70%;
+	height: 15%;
+	
+}
+
+.textbox .message {
+	word-wrap: normal;
+    word-break: break-all;
+	width: 80%;
+	height: 100%;
+}
+
+.textbox .submit-button {
+	width: 50%;
+	font-size: 14px;
+	border: 1px;
+	padding: 5px;
+	background-color: gray;
+}
+.textbox .submit-button:hover {
+	background-color: burlywood;
+	cursor: pointer
 }

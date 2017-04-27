@@ -13,24 +13,29 @@
 			</span>
 		</div>
 	</div>
-	<section>
-		<main>
-			<div class="include">
-				<div class="room-title">
-				{{ roomTitle }}
+	<div class="include">
+		<div class="room-title">
+			{{ roomTitle }}
+		</div>
+		<div id="hidden">
+		</div>
+		<div  class="messages-container">
+			<div class="message-display" ng-repeat="m in messages">
+				<div class="username">
+					{{ m.username }}
 				</div>
-				<div class="message-display" ng-repeat="m in messages">
-					<div class="username">
-						{{ m.username }}
-					</div>
-					<div class="content">
-						{{ m.content }}
-					</div>
-					<div class="time">
-						{{ m.sentAt }}
-					</div>
+				<div class="content">
+					{{ m.content }}
+				</div>
+				<div class="time">
+					{{ m.sentAt }}
 				</div>
 			</div>
-		</main>
-	</section>
+		</div>
+		
+	</div>
+	<div class="textbox">
+		<textarea id="text" class="message" type="text"></textarea>
+		<span class="submit-button" ng-click="room.createMessage()">Send</span>
+	</div>
 </section>

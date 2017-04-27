@@ -12,8 +12,23 @@
 			$scope.roomTitle = room.$value;
 			$scope.messages = Message.getByRoomId(room.$id);
 			console.log($scope.messages);
-			
 		}
+		
+		this.createMessage = function() {
+			var message = document.getElementById("text").value;
+			if (message === null) {
+				document.getElementById('hidden').innerHTML = "You did not enter a valid message".fontcolor('red');
+			}
+			console.log(message);
+			if (this.room) {
+				Message.send(message, this.room.$id);
+				document.getElementById('hidden').innerHTML = "";
+			}
+			else {
+				document.getElementById('hidden').innerHTML = "You did not enter a valid message".fontcolor('red');
+			}
+			
+		};
 		
 		this.open = function () {
 			var modalInstance = $uibModal.open({
@@ -26,10 +41,7 @@
 			console.log(roomName);
 			Room.addRoom(roomName);
 			$close();
-		}
-		
-		
-		
+		};
 		
 	}
 
